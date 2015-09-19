@@ -1,0 +1,13 @@
+create database db_notebook;
+create table db_login(
+emp_id int unsigned primary key auto_increment,
+emp_name varchar(64) unique not null,
+emp_pwd char(32) not null
+)
+
+create table message(
+sender varchar(64) not null,
+getter varchar(64) not null,
+sendtime datetime not null,
+content varchar(2000) not null
+)
